@@ -1,5 +1,5 @@
 function saludarUser() {
-  alert("Binvenido a ShoeSport")
+  alert("Binvenido a ShoeSport");
 }
 
 function eleccionDeCalzado(calzado) {
@@ -9,7 +9,8 @@ function eleccionDeCalzado(calzado) {
 
   0. Salir`);
 
-  while (calzado != 0) {
+  while (calzado !== "0") {
+    //Mejor usar !== y ponemos "" para que la comparacion funcione
     switch (calzado) {
       case "1":
         calzadoDeporte();
@@ -20,7 +21,7 @@ function eleccionDeCalzado(calzado) {
         break;
 
       default:
-        alert(`Porfavor seleccione una opcion.`)
+        alert(`Porfavor seleccione una opcion.`);
         break;
     }
 
@@ -31,19 +32,18 @@ function eleccionDeCalzado(calzado) {
   0. Salir
   
   Saldo actual: $${articulosAcumulados}`);
-
   }
 
-  alert(`El monto total es: $${articulosAcumulados}`)
+  alert(`El monto total es: $${articulosAcumulados}`);
   if (articulosAcumulados == 0) {
-    alert(`Gracias por su visita, vuelva pronto`)
+    alert(`Gracias por su visita, vuelva pronto`);
   } else if (articulosAcumulados > 0) {
-    alert(`Compra realizada con exito.`)
+    alert(`Compra realizada con exito.`);
   }
 }
 
 function calzadoDeporte() {
-  alert(`Seleccione su calzado`)
+  alert(`Seleccione su calzado`);
   let seleccionDeporte = prompt(`Elija su calzado:
 
   1. ZAPATILLAS ADIDAS RUN 70S NEGRA - $20999
@@ -52,23 +52,24 @@ function calzadoDeporte() {
   
   0. Salir`);
 
-  while (seleccionDeporte != 0) {
+  while (seleccionDeporte !== "0") {
+    // Aca lo mismo
     switch (seleccionDeporte) {
       case "1":
-        articulosAcumulados = parseInt(articulosAcumulados + 20999)
-        alert(`ZAPATILLAS ADIDAS RUN 70S NEGRA Agregado al carrito.`)
+        articulosAcumulados += 20999; //Aca
+        alert(`ZAPATILLAS ADIDAS RUN 70S NEGRA Agregado al carrito.`);
         break;
       case "2":
-        articulosAcumulados = parseInt(articulosAcumulados + 15999)
-        alert(`ZAPATILLAS RUNNING ADIDAS CORERACER NEGRA Agregado al carrito.`)
+        articulosAcumulados == 15999; //Aca
+        alert(`ZAPATILLAS RUNNING ADIDAS CORERACER NEGRA Agregado al carrito.`);
         break;
       case "3":
-        articulosAcumulados = parseInt(articulosAcumulados + 19799)
-        alert(`ZAPATILLAS RUNNING ADIDAS NEGRA Agregado al carrito.`)
+        articulosAcumulados += 19799; //Aca
+        alert(`ZAPATILLAS RUNNING ADIDAS NEGRA Agregado al carrito.`);
         break;
 
       default:
-        alert(`Porfavor seleccione una opcion.`)
+        alert(`Porfavor seleccione una opcion.`);
         break;
     }
 
@@ -85,7 +86,7 @@ function calzadoDeporte() {
 }
 
 function calzadoCasual() {
-  alert(`Seleccione su calzado`)
+  alert(`Seleccione su calzado`);
   let seleccionCasual = prompt(`Elija su calzado:
 
   1. BOTAS NIKE COURT VISION MID NBA ROJA - $23099
@@ -98,22 +99,24 @@ function calzadoCasual() {
   while (seleccionCasual != 0) {
     switch (seleccionCasual) {
       case "1":
-        articulosAcumulados = parseInt(articulosAcumulados + 23099)
-        alert(`BOTAS NIKE COURT VISION MID NBA ROJA Agregado al carrito.`)
+        articulosAcumulados += 23099;
+        alert(`BOTAS NIKE COURT VISION MID NBA ROJA Agregado al carrito.`);
 
         break;
       case "2":
-        articulosAcumulados = parseInt(articulosAcumulados + 14995)
-        alert(`ZAPATILLA CONVERSE CHUCK TAYLOR ALL STAR NEGRA Agregado al carrito.`)
+        articulosAcumulados += 14995;
+        alert(
+          `ZAPATILLA CONVERSE CHUCK TAYLOR ALL STAR NEGRA Agregado al carrito.`
+        );
         break;
 
       case "3":
-        articulosAcumulados = parseInt(articulosAcumulados + 14399)
-        alert(`ZAPATILLA CONVERSE LAPA OX NEGRA Agregado al carrito.`)
+        articulosAcumulados += 14399;
+        alert(`ZAPATILLA CONVERSE LAPA OX NEGRA Agregado al carrito.`);
         break;
 
       default:
-        alert(`Porfavor seleccione una opcion.`)
+        alert(`Porfavor seleccione una opcion.`);
         break;
     }
 
@@ -133,21 +136,3 @@ let articulosAcumulados = 0;
 
 saludarUser();
 eleccionDeCalzado();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
