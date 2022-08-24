@@ -1,0 +1,23 @@
+.logo {
+  font-size: 37px;
+  margin-left: 15px;
+  color: #fd7e14;
+}
+
+.menu {
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+.name-logo {
+  margin-left: 6px;
+}
+
+.search {
+  color: #fff;
+}
+
+.eliminateIcon {
+  display: flex;
+  cursor: pointer;
+}
