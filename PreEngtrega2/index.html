@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/icon.css" />
+    <script src="https://kit.fontawesome.com/8fe8031e09.js" crossorigin="anonymous"></script>
+    <title>ShoeSport</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="logo-container">
+        <i class="logo fa-solid fa-ticket"></i>
+        <span class="name-logo">ShoeSport</span>
+      </div>
+
+      <nav class="nav-container">
+        <ul class="ul-container">
+          <li class="list">
+            <a href="">Inicio</a>
+          </li>
+
+          <li class="list">
+            <a href="">Ubicacion</a>
+          </li>
+
+          <li class="list">
+            <a href="">Contacto</a>
+          </li>
+        </ul>
+        <i class="menu fa-solid fa-bars"></i>
+      </nav>
+    </header>
+
+    <form class="form-container">
+      <span><i class="search fa-solid fa-magnifying-glass"></i></span>
+      <input class="input-class" type="text" name="buscador" id="buscador" placeholder="Buscar por nombre" />
+    </form>
+
+    <div class="container-section">
+      <div class="filter-container">
+        <div class="filter-panel">
+          <div class="backgroud-style">Browser Category</div>
+          <ul class="main-category" id="filter-js"></ul>
+        </div>
+
+        <div class="filter-panel-color">
+          <div class="backgroud-style">Color Filter</div>
+          <ul class="main-category" id="color-js"></ul>
+        </div>
+      </div>
+
+      <section class="grid-container">
+        <div class="cards-container" id="cards-js"></div>
+      </section>
+    </div>
+
+    <div class="carrito">
+      <h1>Carrito</h1>
+      <div class="cart-grid">
+        <ul class="cart-content">
+          <li class="cart-item">#</li>
+          <li class="cart-item">Item</li>
+          <li class="cart-item">Cantidad</li>
+          <li class="cart-item">Accion</li>
+          <li class="cart-item">Total</li>
+        </ul>
+        <div class="cart-container" id="cart-js"></div>
+      </div>
+      <div class="total-container">
+        <h1 id="total-font">Total productos</h1>
+        <span class="cantidad" id="cantidad-id"> </span>
+        <span class="total" id="total-id"></span>
+      </div>
+    </div>
+    <div class="gap"></div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
