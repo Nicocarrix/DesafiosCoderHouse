@@ -22,7 +22,7 @@
     <title>ShoeSport</title>
   </head>
   <body>
-    <nav class="header-container navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="header-container navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container-fluid">
         <div class="logo-container">
           <i class="logo fa-solid fa-ticket"></i>
@@ -43,7 +43,7 @@
           </button>
 
           <button
-            class="btn btn-primary"
+            class="btn btn-primary d-lg-none"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasRight"
@@ -97,6 +97,15 @@
             <li class="list nav-item px-lg-5">
               <a class="nav-link active" href="">Contacto</a>
             </li>
+            <button
+              class="btn btn-primary d-none d-lg"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            >
+              <i class="fa-solid fa-cart-shopping cart-icon"></i>
+            </button>
           </ul>
         </div>
       </div>

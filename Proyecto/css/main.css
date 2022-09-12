@@ -28,6 +28,7 @@ p {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 0 20px 0 #1616164b;
+  transition: 200ms ease-in-out, 200ms ease-in-out !important;
 }
 
 .logo-container {
@@ -105,6 +106,7 @@ a {
   height: 55px;
   gap: 0px;
   margin-bottom: 1.5rem;
+  margin-top: 3.5rem;
 }
 
 .search {
@@ -217,9 +219,6 @@ a {
 .filter {
   display: flex;
   width: 100%;
-}
-
-.name-price {
 }
 
 .style-cart {
